@@ -17,10 +17,16 @@ module.exports = {
       {
         test: /\.css$/, 
         use: [
+          MiniCssExtractPlugin.loader,
           'style-loader', 
           'css-loader', 
         ],
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[style].css',
+    }),
+  ],
 };
