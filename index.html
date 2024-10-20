@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BOOKSHOP</title>
+    <link rel="stylesheet" href="src/CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header__name">Bookshop</div>
+      <div class="header__nav">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">BOOKS</a>
+            </li>
+
+            <li>
+              <a href="#">AUDIOBOOKS</a>
+            </li>
+
+            <li>
+              <a href="#">STATIONERY & GIFTS</a>
+            </li>
+
+            <li>
+              <a href="#">BLOG</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="header__icon">
+        <a href=""><img src="src/SVG/user.svg" alt="" /></a>
+        <a href=""><img src="src/SVG/search.svg" alt="" /></a>
+        <a href="" id="cart class="cart "><img src="src/SVG/shop bag.svg" alt="" /></a>
+      </div>
+    </header>
+    <main>
+      <div class="main__banner">
+        <div class="banner">
+          <div class="slider__line">
+            <img class="slider__img" src="src/PNG/banner_promo/banner.png" alt="" />
+            <img
+              class="slider__img"
+              src="src/PNG/banner_promo/banner 2.png"
+              alt=""
+            />
+            <img
+              class="slider__img"
+              src="src/PNG/banner_promo/banner 3.png"
+              alt=""
+            />
+          </div>
+
+          <div class="banner__dots_wrapper">
+            <div class="slider__dot active-dot"></div>
+            <div class="slider__dot"></div>
+            <div class="slider__dot"></div>
+          </div>
+        </div>
+        <a href="#">
+          <img
+            class="banner__promo one"
+            src="src/PNG/banner_promo/promo 1.png"
+            alt=""
+        /></a>
+        <a href="#">
+          <img
+            class="banner__promo-two"
+            src="src/PNG/banner_promo/promo 2.png"
+            alt=""
+        /></a>
+      </div>
+      <div class="list">   
+        
+        <div class="category-buttons">
+          <button data-category="Architecture">Architecture</button>
+          <button data-category="Art">Art & Fashion</button>
+          <button data-category="Biography">Biography</button>
+          <button data-category="Business">Business</button>
+          <button data-category="Hobbies">Crafts & Hobbies</button>
+          <button data-category="Drama">Drama</button>
+          <button data-category="Fiction">Fiction</button>
+          <button data-category="Cooking">Food & Drink</button>
+          <button data-category="Health">Health & Wellbeing</button>
+          <button data-category="History">History & Politics</button>
+          <button data-category="Humor">Humor</button>
+          <button data-category="Poetry">Poetry</button>
+          <button data-category="Psychology">Psychology</button>
+          <button data-category="Science">Science</button>
+          <button data-category="Technology">Technology</button>
+          <button data-category="Travel">Travel & Maps</button>
+          
+      </div>
+      
+      <div id="results" class="books"></div>
+      
+      </div>
+    
+        
+    </main>
+    <div class="load-more-container">
+    <button id="loadMoreButton" style="display:none;">LOAD MORE</button></div>
+
+    <script src="dist/main.js"></script>
+    <script src="dist/another.bundle.js"></script>
+    
+  </body>
+</html>
