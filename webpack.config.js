@@ -4,21 +4,18 @@ const path = require("path");
 module.exports = {
   entry: {
     main: "./src/js/index.js",
-    another: "./src/js/slider.js",
-    
   },
   output: {
-    filename: "[name].bundle.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, "dist"),
   },
   mode: "development",
   module: {
     rules: [
       {
-        test: /\.css$/, 
+        test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'style-loader', 
+          MiniCssExtractPlugin.loader, 
           'css-loader', 
         ],
       },
@@ -26,7 +23,8 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: '[style].css',
+      filename: '[name].css', 
     }),
   ],
 };
+
