@@ -19,7 +19,7 @@ window.onload = () => {
     searchBooks(currentCategory, startIndex);
     loadMoreButton.style.display = "block";
   }
-  // Инициализация корзины при загрузке страницы
+  
   initializeCart();
 };
 
